@@ -11,8 +11,12 @@ if(!isset($_GET['fid']) || !is_numeric($_GET['fid'])){
 // INCLUDE _FUNC.PHP
 require_once('_func.php');
 
-
+// QUOTE
 if($fid == "1"){
   echo quote::fetch();
+
+// PUNISHMENTS
+}else if($fid == "2"){
+  echo punishment::points(); 
 }
 ?>
